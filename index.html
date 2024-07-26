@@ -8,13 +8,11 @@
 </head>
 <body>
 	<div class="container">
-		<div class="male" onmouseenter="maleAvatarAppear()" onmouseleave="maleAvatarDisappear()"> <ul class="text" id="maleList"> </ul> </div>
-		<div class="female" onmouseenter="femaleAvatarAppear()" onmouseleave="femaleAvatarDisappear()"> <ul class="text" id="femaleList"> </ul> </div>
+		<div class="male" id="maleDiv" onmouseenter="maleAvatarAppear()" onmouseleave="maleAvatarDisappear()"> <ul class="text" id="maleList"> </ul> </div>
+		<div class="female" id="femaleDiv" onmouseenter="femaleAvatarAppear()" onmouseleave="femaleAvatarDisappear()"> <ul class="text" id="femaleList"> </ul> </div>
 		<div class="button"> <button class="btn" onclick="userAppend()">Sort Gender</button> </div>
-		<div class="logo">
 		<div class="maleAvatarInvicible" id="maleImg"><img src="./assets/male.png"></div>
 		<div class="femaleAvatarInvicible" id="femaleImg"><img src="./assets/female.png"></div>
-		</div>
 	</div>
 
 	<script type="text/javascript" src="./app.js"></script>

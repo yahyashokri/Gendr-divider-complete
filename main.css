@@ -61,36 +61,37 @@ body{
 .btn:hover {
 background-color: #0056b3;
 }
-.logo{
-    grid-area: 2/2/3/4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .maleAvatarInvicible{
     display: none;
+    grid-area: 1/3/2/5;
 }
 .femaleAvatarInvicible{
     display: none;
+    grid-area: 1/1/2/3;
 }
 .maleAvatar{
+
     display: inline-flex;
+    grid-area: 1/3/2/5;
     height: 245px;
     width: 255px;
 }
 .femaleAvatar{
     display: inline-flex;
+    grid-area: 1/2/2/3;
     height: 210px;
     width: 205px;
 }
-ul{
+.maleTxt{
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-size: 1.2em;
+    list-style-type: none;
     color: #333;
     line-height: 1.6;
     text-align: center;
-    margin: 20px;
-    padding: 10px;
+    margin: 10px;
+    margin-right: 40px;
+    padding: 1px;
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #f9f9f9;
@@ -98,7 +99,35 @@ ul{
     transition: all 0.3s ease;
 }
 
-.text:hover {
-    background-color: #e9e9e9;
+.maleTxt:hover {
+    background-color: #bebcbc;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.femaleTxt{
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.2em;
+    list-style-type: none;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    margin: 10px;
+    margin-right: 40px;
+    padding: 1px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.femaleTxt:hover {
+    background-color: #bebcbc;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.femaleDisappear{
+    display: none;
+}
+.maleDisappear{
+    display: none;
 }
